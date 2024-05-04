@@ -1,7 +1,7 @@
 # TASK 72
 # y = x**2 + 4 a = -2 b = 2 n = 10000
 
-from random import randint
+from random import random
 
 a, b = -2, 2
 n = 10000
@@ -12,8 +12,8 @@ for i in range(a, b + 1):
     maxY = max(maxY, i * i + 4)
 
 for i in range(10001):
-    x = randint(a, b)
-    y = randint(0, maxY)
+    x = a + (b - a) * random()
+    y = maxY * random()
 
     trueY = x * x + 4
 

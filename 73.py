@@ -1,6 +1,6 @@
 # TASK 73
 
-from random import randint
+from random import random
 from math import pi, sin
 
 a = 0
@@ -13,8 +13,8 @@ for i in range(a, round(b + 1)):
 
 k = 0
 for i in range(10001):
-    x = randint(a, round(b))
-    y = randint(0, round(maxY))
+    x = a + (b - a) * random()
+    y = maxY * random()
     trueY = sin(x)
     if y <= trueY:
         k += 1
